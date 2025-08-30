@@ -1,0 +1,35 @@
+.note{
+  width: 16rem;
+  height: auto;
+  grid-column: 2/ 3;
+  grid-row: 2/ span 3;
+  background-color: var(--main);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.title{
+  width: 100%;
+  height: 2rem;
+  background-color: var(--dark);
+  color: var(--main);
+  padding: 0.5rem;
+}
+
+.content{
+  padding: 1rem 1rem;
+}
+
+@media (max-width: 968px) {
+
+.note{
+ 
+  height: 100%;
+  width: 100%;
+  grid-column: 1/ 3;
+  grid-row: 2/4;
+  
+
+} 
+}

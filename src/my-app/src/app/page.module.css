@@ -1,0 +1,123 @@
+:root{
+  --dark: #30332d;
+  --main: white;
+  --bg:  #78cc6d;
+  --radius: 0.5rem; 
+  --shadow:  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+.main{
+  display: grid;  
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(2,auto);
+  gap: 1rem;
+  width: 50%;
+  height: 5rem;
+  margin: 0.7rem 0rem;
+  
+  }
+
+.header{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  grid-column: 1/3;
+  grid-row: 1/span 1;
+  background-color: none;
+}
+.header > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.header h1{
+  font-size: 4rem;
+}
+.header p{
+  color: #848787;
+}
+
+.container{
+   width: 100px;
+   height: 100px;
+   border: solid var(--dark) 2px;
+   border-radius: var(--radius);
+   padding: 1rem;
+
+}
+
+.todo{
+
+  width: 100%;
+  height: auto;
+  grid-column: 1/ 2;
+  grid-row: 2/ span 2;
+  background-color: var(--main);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+
+}
+
+
+
+
+.title{
+  width: 100%;
+  height: 2rem;
+  background-color: var(--dark);
+  color: var(--main);
+  padding: 0.5rem;
+  
+  
+}
+
+.content{
+  padding: 0.25rem;
+}
+
+@media (max-width: 968px) {
+  .main{
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto auto; 
+    display: grid;  
+
+    width: 80%;
+    height: auto; 
+    margin-top: 2rem;
+  }
+
+  .header > div{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+  .header{
+    width: 100%;
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 1/2; 
+  }
+
+  .note{
+    height: auto;
+    width: 100%;
+    grid-column: 1/3; 
+    grid-row: 2/3; 
+  }
+
+  .todo{
+
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 3/4; 
+  }
+}
