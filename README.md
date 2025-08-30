@@ -1,40 +1,73 @@
-# ASD Interview Questions
+# Taskly
 
-## Instructions
+**Todo list for everyone**  
+Live Demo: [https://todo-lac-nu.vercel.app](https://todo-lac-nu.vercel.app)
 
-- Fork this repository into your own GitHub account. If you don't have a GitHub account, please create one.
-- Commit all your changes to your forked repository, following clean Git commit hygiene.
-    - Demonstrate clean Git commit hygiene, following best practices for commit messages and organizing your commits.
-    - For guidelines on clean Git commit hygiene, you can refer to [this source](https://cbea.ms/git-commit/).
-- Place all your source code files in the `src` folder.
-- The bonus challenge is optional but greatly welcomed. You can choose to tackle it if you'd like.
-- Include comments in your code to explain your approach, algorithms, and any important details.
-- Additionally, if possible, include test cases for your solutions.
+Taskly is a simple web application that helps users manage their tasks and jot down quick notes.
 
-# Problem - To-Do List Web Application
+---
 
-Your mission is to develop a basic To-Do List web application. You have the flexibility to use fundamental HTML, CSS, and JavaScript or opt for a broader range of web stacks, such as React, Bootstrap, Angular, Laravel, or even WebAssembly (WASM). This application must enable users to seamlessly add, modify, and remove tasks, each characterized by a title, description, status (complete or pending), and priority. The design should be clean and intuitive.
+## ✨ Features
 
-## Requirements
+- **Todo List**: Add, edit, and delete tasks.  
+- **Notes**: Editable notes section for quick reminders.  
+- **Responsive Design**: Works on desktop and mobile.  
+- **Modern UI**: Clean layout with smooth styling.  
 
-1. Create a user interface using HTML and CSS to display a list of tasks.
-2. Implement functionality using JavaScript to add new tasks, edit existing tasks, and mark tasks as completed or not.
-3. Allow users to input a title and description for each task.
-4. Implement a feature to prioritize tasks (e.g., high, medium, low).
-5. Display tasks with appropriate styling to indicate their completion status.
-6. Provide options to edit or delete tasks.
+### 🔧 Additional Features
+- **Editable Note Widget** – Users can click on the note box and start writing instantly, without needing a save button.
 
-## Evaluation Criteria
+---
 
-1. Correct implementation of task creation, editing, and deletion.
-2. Proper handling of task status and user interactions.
-3. Clear and concise indication of task priority.
-4. User interface design and user experience.
-5. Code organization, clarity, and maintainability.
-6. Proper usage of HTML, CSS, and JavaScript.
-7. Documentation explaining how to run the application and any additional features you've implemented.
+## 🛠 Tech Stack
 
-## Bonus (Optional)
+- **Framework**: [Next.js](https://nextjs.org/) (React)  
+- **Styling**: CSS (with variables for theme customization)  
+- **Deployment**: [Vercel](https://vercel.com/)  
 
-1. Ensure responsive design, so the web application is usable on both desktop and mobile devices.
-2. Add animations or transitions to enhance the user experience.
+---
+
+## 🚀 Deployment
+
+The app is deployed using **Vercel**.  
+👉 Live Demo: [https://todo-lac-nu.vercel.app](https://todo-lac-nu.vercel.app)
+
+---
+
+## 💻 Installation & Running Locally
+
+To run **Taskly** locally, paste these commands into your terminal:
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/anasCanCommit/todo-list.git
+```
+2. Navigate into the project folder
+
+3. Install dependencies
+```bash
+npm install
+```
+4. Start the development server
+```bash
+npm run dev
+```
+5. Open the app in your browser
+```bash
+Visit http://localhost:3000
+```
+ to see Taskly in action.
+
+
+# 🔮 Future Improvements
+
+- Save tasks persistently using local storage or a database.
+
+- Allow multiple notes to be created and draggable across the viewport.
+
+- Enable drag-and-drop task reordering.
+
+- Add a dark mode toggle for better user experience.
+
+
